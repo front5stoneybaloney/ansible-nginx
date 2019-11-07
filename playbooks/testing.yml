@@ -1,0 +1,10 @@
+---
+- name: install wget and nano
+  hosts: webservers
+
+  tasks:
+  - name: install nano
+    yum: name=nano state=latest
+
+  - name: install wget
+    yum: name=wget state=latest
